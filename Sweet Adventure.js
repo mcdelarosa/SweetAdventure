@@ -21,15 +21,16 @@ function game() {
     console.log(donutTop);
     console.log(forkLeft);
 
-    if (forkLeft < 50 && forkLeft > 0 && donutTop >= 140) {
+    if (forkLeft < 50 && forkLeft > 0 && donutTop >= 150) {
         isAlive = false;
         score = 0;
         alert("GAME OVER")
     } else {
         score++;
+        swapImage(Donut);
     }
 
-    swapImage(Donut);
+
 }
 
 setInterval(Scoreboard,1000);
